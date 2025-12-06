@@ -1,14 +1,25 @@
-import { useState } from 'react'
-import reactLogo from '@/assets/img/react.svg'
-import viteLogo from '@/assets/img/vite.svg'
-import '@/assets/css/Home.css'
+import Header from '@/client/components/Header'
+import Footer from '@/client/components/Footer'
+import HeroSectionMain from '@/client/components/HeroSectionMain'
+import AboutSectionMain from '@/client/components/AboutSectionMain'
+import ServicesSessionMain from '@/client/components/ServicesSessionMain'
+import TrackSessionMain from '@/client/components/TrackSessionMain'
+import YoutubeSessionMain from '@/client/components/YoutubeSessionMain'
 
-function App() {
-  const [count, setCount] = useState(0)
-  console.log(count)
+function Home() {
+  // const [count, setCount] = useState(0)
   return (
     <>
-      <div>
+      <Header />
+
+      <HeroSectionMain />
+      <AboutSectionMain />
+      <ServicesSessionMain />
+      <TrackSessionMain />
+      <YoutubeSessionMain />
+
+      <Footer />
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -23,9 +34,9 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p> */}
     </>
   )
 }
 
-export default App
+export default Home

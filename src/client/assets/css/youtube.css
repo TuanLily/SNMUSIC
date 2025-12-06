@@ -1,0 +1,45 @@
+.youtube__item__pic {
+  position: relative;
+}
+
+.youtube__item__pic img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #765f92;
+  border: none;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.play-btn i {
+  font-size: 24px;
+}
+
+/* Popup */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.video-modal-content iframe {
+  width: 900px;
+  max-width: 95%;
+  height: 500px;
+  border-radius: 8px;
+}
