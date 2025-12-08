@@ -394,6 +394,138 @@ ol {
 	display: none;
 }
 
+/* Keep header links white and only underline on hover */
+.nav-link-underline {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+.nav-link-underline:hover,
+.nav-link-underline:focus {
+	color: #ffffff !important;
+	text-decoration: underline;
+}
+
+.nav-link-active {
+	color: #ffffff !important;
+	text-decoration: underline;
+}
+
+/* Tracklist page */
+.tracklist-page {
+	background: #ffffff;
+	color: #1f1f1f;
+	min-height: 100vh;
+	padding-top: 90px;
+}
+
+.tracklist-hero {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	margin-bottom: 20px;
+}
+
+.tracklist-tabs {
+	display: flex;
+	gap: 16px;
+	overflow-x: auto;
+	padding: 10px 0;
+}
+
+.tracklist-tab {
+	background: transparent;
+	border: none;
+	color: #6b7280;
+	font-weight: 600;
+	padding: 8px 0;
+	position: relative;
+}
+
+.tracklist-tab.active,
+.tracklist-tab:hover {
+	color: #111827;
+}
+
+.tracklist-tab.active::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -8px;
+	height: 2px;
+	background: #111827;
+}
+
+.tracklist-content {
+	padding-bottom: 60px;
+}
+
+.tracklist-section {
+	margin-bottom: 32px;
+}
+
+.tracklist-section__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+.tracklist-section__header h3 {
+	margin: 0;
+	font-size: 18px;
+	color: #111827;
+}
+
+.tracklist-subtitle {
+	margin: 4px 0 0;
+	color: #6b7280;
+	font-size: 14px;
+}
+
+.tracklist-subtitle a {
+	color: #111827;
+	text-decoration: underline;
+}
+
+.tracklist-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+	gap: 14px;
+}
+
+.tracklist-card {
+	background: #ffffff;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 180px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	box-shadow: 0 10px 20px rgba(17, 24, 39, 0.04);
+}
+
+.tracklist-card__thumb {
+	background: linear-gradient(135deg, #dfe5ef, #cfd8e6);
+	min-height: 120px;
+}
+
+.tracklist-card__meta {
+	padding: 10px;
+}
+
+.tracklist-card__title {
+	color: #111827;
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.tracklist-card__desc {
+	color: #6b7280;
+	font-size: 12px;
+	line-height: 1.3;
+}
+
 /*---------------------
   Hero
 -----------------------*/

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '@/client/pages/Home'
+import Library from '@/client/pages/Library'
 // import Dashboard from "@/admin/pages/Dashboard";
 
 // CSS
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         {/* Giao diện Client */}
         <Route path="/" element={<Home />} />
+        <Route path="/library" element={<Library />} />
 
         {/* Giao diện Admin */}
         {/* <Route path="/admin" element={<Dashboard />} /> */}
